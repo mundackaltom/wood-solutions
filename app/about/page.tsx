@@ -1,16 +1,193 @@
+"use client";
+
+import Link from "next/link";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+
+function AboutHero() {
+  const { ref, isVisible } = useIntersectionObserver();
+
+  return (
+    <section 
+      ref={ref}
+      className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-20 md:py-28 fade-in-up ${isVisible ? 'is-visible' : ''}`}
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            About Wood Solutions
+          </h1>
+          <p className="text-xl md:text-2xl text-green-100 leading-relaxed">
+            Independent expertise serving the wood industry with integrity, objectivity, and unparalleled technical knowledge.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CompanyStory() {
+  const { ref, isVisible } = useIntersectionObserver();
+
+  return (
+    <section 
+      ref={ref}
+      className={`py-20 md:py-28 bg-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+              Our Mission
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              Wood Solutions operates as an independent, expert-led advisory platform serving the wood, construction, and materials ecosystem. Our work is guided by technical integrity, ethical practice, and a deep understanding of material performance, regulatory frameworks, and market realities.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Whether you require technical evaluation, sourcing support, construction advisory, training, or strategic market insight, Wood Solutions offers structured, reliable, and outcome-oriented engagement.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Founded on Principles</h3>
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Technical Integrity</h4>
+                  <p className="text-gray-600">Science-based evaluation and evidence-driven recommendations</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Ethical Practice</h4>
+                  <p className="text-gray-600">Transparent processes and honest, objective advice</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Client Focus</h4>
+                  <p className="text-gray-600">Solutions aligned with your specific objectives and constraints</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function IndependenceStatement() {
+  const { ref, isVisible } = useIntersectionObserver();
+
+  return (
+    <section 
+      ref={ref}
+      className={`py-20 md:py-28 bg-green-50 fade-in-up ${isVisible ? 'is-visible' : ''}`}
+    >
+      <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+        <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 tracking-tight">
+            Independence Statement
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <strong>We do not trade in wood products.</strong> Our independence allows us to provide objective advice, unbiased evaluations, and client-aligned solutions without any conflicts of interest.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            This fundamental principle ensures that every recommendation, assessment, and strategic decision is made purely in your best interests, not ours.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CoreValues() {
+  const { ref, isVisible } = useIntersectionObserver();
+
+  const values = [
+    {
+      title: "Integrity",
+      description: "Honest, transparent communication in every interaction. We provide candid assessments and straightforward recommendations."
+    },
+    {
+      title: "Excellence",
+      description: "Unwavering commitment to technical accuracy and professional standards. We deliver solutions that exceed expectations."
+    },
+    {
+      title: "Innovation",
+      description: "Forward-thinking approaches to traditional challenges. We help you stay ahead of industry developments and market changes."
+    },
+    {
+      title: "Partnership",
+      description: "Long-term relationships built on trust and mutual success. Your achievements are our achievements."
+    }
+  ];
+
+  return (
+    <section 
+      ref={ref}
+      className={`py-20 md:py-28 bg-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+            Our Values
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            The principles that guide every decision and shape our approach to serving clients across the wood industry.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {values.map((value, index) => (
+            <div key={index} className="p-8 border border-gray-200 rounded-lg hover:border-green-200 transition-colors duration-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{value.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AboutCTA() {
+  const { ref, isVisible } = useIntersectionObserver();
+
+  return (
+    <section 
+      ref={ref}
+      className={`py-20 md:py-28 bg-green-800 text-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
+    >
+      <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+          Let's Work Together
+        </h2>
+        <p className="text-xl text-green-100 mb-8 leading-relaxed">
+          Experience the difference that independent expertise makes. Connect with us to discuss how we can support your objectives.
+        </p>
+        <Link
+          href="/contact"
+          className="inline-block bg-white text-green-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition-colors duration-200 focus-ring"
+        >
+          Start a Conversation
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 export default function AboutPage() {
   return (
-    <div className="pt-24 max-w-4xl mx-auto px-6">
-      <h1 className="text-4xl font-bold mb-8">About Wood Solutions</h1>
-      <p className="mb-6 text-neutral-700">
-        Wood Solutions operates as an independent, expert-led advisory platform serving the wood, construction, and interiors ecosystem. Our work is guided by technical integrity, ethical practice, and a deep understanding of material performance, regulatory frameworks, and market realities.
-      </p>
-      <p className="mb-6 text-neutral-700">
-        We do not trade in wood products. Our independence allows us to provide objective advice, unbiased evaluations, and client-aligned solutions.
-      </p>
-      <p className="mb-6 text-neutral-700">
-        Whether you require technical evaluation, sourcing support, construction advisory, training, or strategic market insight, Wood Solutions offers structured, reliable, and outcome-oriented engagement.
-      </p>
+    <div className="pt-20">
+      <AboutHero />
+      <CompanyStory />
+      <IndependenceStatement />
+      <CoreValues />
+      <AboutCTA />
     </div>
   );
 }

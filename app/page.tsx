@@ -5,6 +5,7 @@ import WhoWeServe from "../components/WhoWeServe";
 import ExpertiseHighlight from "../components/ExpertiseHighlight";
 import ProcessSection from "../components/ProcessSection";
 import TrustCredentials from "../components/TrustCredentials";
+import CaseStudyPreview from "../components/CaseStudyPreview";
 import ConsultationCTA from "../components/ConsultationCTA";
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
       <ExpertiseHighlight />
       <ProcessSection />
       <TrustCredentials />
+      <CaseStudyPreview />
       <ConsultationCTA />
     </div>
   );

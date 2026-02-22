@@ -1,3 +1,7 @@
+"use client";
+
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 const steps = [
   {
     number: "01",
@@ -22,36 +26,40 @@ const steps = [
 ];
 
 export default function ProcessSection() {
+  const { ref, isVisible } = useIntersectionObserver();
+
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section 
+      ref={ref}
+      className={`py-16 md:py-24 bg-gray-50 fade-in-up ${isVisible ? 'is-visible' : ''}`}
+    >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             How We Work
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our proven four-step process ensures comprehensive and effective solutions
+            Our proven four-step process ensures comprehensive and effective solutions.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+
+        <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-8">
           {steps.map((step, index) => (
-            <div key={index} className="text-center md:text-left">
-              <div className="flex justify-center md:justify-start mb-4">
-                <div className="w-16 h-16 bg-green-700 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  {step.number}
-                </div>
+            <div
+              key={index}
+              className="relative flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0"
+            >
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-700 text-white text-lg font-bold mb-4">
+                {step.number}
               </div>
-              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {step.title}
               </h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 {step.description}
               </p>
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 right-0 transform translate-x-1/2">
-                  <div className="w-8 h-0.5 bg-gray-300"></div>
-                </div>
+                <div className="hidden lg:block w-16 h-1 bg-green-700 mt-6"></div>
               )}
             </div>
           ))}
