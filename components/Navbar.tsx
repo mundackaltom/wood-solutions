@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
@@ -49,8 +50,19 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-semibold text-green-900">
-          Wood Solutions
+        {/* Logo and Brand Section */}
+        <Link href="/" className="flex items-center space-x-3">
+          <Image
+            src="/images/LogoFinalBG.png"
+            alt="Wood Solutions Logo"
+            width={40}
+            height={40}
+            className="h-9 w-auto sm:h-10"
+            priority
+          />
+          <span className="text-green-900 font-bold text-lg sm:text-xl">
+            Wood Solutions
+          </span>
         </Link>
 
         <nav className="hidden md:flex gap-8 font-medium">
