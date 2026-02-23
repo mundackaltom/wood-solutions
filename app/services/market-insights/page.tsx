@@ -1,85 +1,41 @@
 import ServicePageLayout from "../../../components/ServicePageLayout";
-import { FaChartLine, FaLightbulb, FaUsers, FaClipboardCheck, FaBullhorn, FaSearch } from "react-icons/fa";
 
 export default function MarketInsightsPage() {
   return (
     <ServicePageLayout
-      title="Market Insights & Brand Consultancy"
-      positioningStatement="Building Credible Brands Through Insight, Science and Strategy"
-      description="We provide actionable market insights and strategic brand consultancy to help businesses build credibility and achieve sustainable growth. Our expertise ensures your brand stands out in a competitive market."
+      title="Market Insights & Consultancy"
+      positioningStatement="Data-driven insights for strategic decision-making"
+      description="Our market insights and consultancy services provide actionable intelligence to help you navigate the complexities of the wood industry."
       offerings={[
-        {
-          icon: <FaChartLine size={32} />, 
-          title: "Market Surveys",
-          description: "Comprehensive market surveys and feasibility assessments."
-        },
-        {
-          icon: <FaLightbulb size={32} />, 
-          title: "Brand Review",
-          description: "In-depth analysis and recommendations for brand improvement."
-        },
-        {
-          icon: <FaUsers size={32} />, 
-          title: "Consumer Studies",
-          description: "Understanding consumer perceptions and preferences."
-        },
-        {
-          icon: <FaClipboardCheck size={32} />, 
-          title: "Expert Endorsements",
-          description: "Benchmarking and endorsements to enhance brand credibility."
-        },
-        {
-          icon: <FaBullhorn size={32} />, 
-          title: "Strategic Advisory",
-          description: "Guidance for successful product launches and market entry."
-        },
+        { icon: <span>📈</span>, title: "Market Analysis", description: "In-depth research and trend analysis." },
+        { icon: <span>🔍</span>, title: "Competitor Insights", description: "Understand your market position." },
+        { icon: <span>📊</span>, title: "Strategic Recommendations", description: "Tailored strategies for growth." },
       ]}
       targetAudiences={[
-        "Manufacturers",
-        "Builders",
-        "Developers",
-        "Architects",
-        "Institutions",
+        "Business Leaders",
+        "Market Analysts",
+        "Investors",
+        "Policy Makers",
       ]}
       processSteps={[
-        { step: "1. Research & Analysis", description: "Conducting in-depth market research and analysis.", icon: <FaSearch size={24} /> },
-        { step: "2. Strategy Development", description: "Creating tailored strategies for brand positioning and growth.", icon: <FaLightbulb size={24} /> },
-        { step: "3. Implementation", description: "Executing strategies and monitoring progress.", icon: <FaClipboardCheck size={24} /> },
-        { step: "4. Continuous Improvement", description: "Refining strategies based on market feedback.", icon: <FaChartLine size={24} /> },
+        { step: "Define Objectives", description: "Understand your business goals." },
+        { step: "Conduct Research", description: "Gather and analyze market data." },
+        { step: "Develop Strategies", description: "Create actionable plans for success." },
+        { step: "Implement Solutions", description: "Support execution and monitoring." },
       ]}
       outcomes={[
-        "Enhanced brand credibility and market presence",
-        "Data-driven decision-making",
-        "Improved customer engagement and loyalty",
-        "Successful product launches",
-        "Sustainable business growth",
+        "Informed decision-making",
+        "Improved market positioning",
+        "Sustainable growth",
       ]}
       caseStudy={{
-        title: "Rebranding a Leading Construction Firm",
-        description: "We partnered with a leading construction firm to revamp their brand strategy. Through market research and strategic advisory, the firm achieved a 40% increase in brand recognition and a 25% growth in client acquisition.",
-        link: "/case-studies/construction-brand-revamp",
+        title: "Case Study: Market Expansion",
+        description: "Learn how we helped a company expand into new markets with data-driven strategies.",
+        link: "/case-studies/market-expansion",
       }}
       faqs={[
-        {
-          question: "What industries do you specialize in?",
-          answer: "We specialize in construction, manufacturing, and architectural industries."
-        },
-        {
-          question: "Do you provide global market insights?",
-          answer: "Yes, we offer insights and strategies for both local and international markets."
-        },
-        {
-          question: "Can you help with product launches?",
-          answer: "Absolutely. We provide strategic advisory for successful product launches."
-        },
-        {
-          question: "What is included in a brand review?",
-          answer: "Our brand review includes an analysis of your current brand positioning, customer perception, and recommendations for improvement."
-        },
-        {
-          question: "How do you conduct market surveys?",
-          answer: "We use a combination of qualitative and quantitative research methods to gather actionable insights."
-        },
+        { question: "What is market insights consultancy?", answer: "It involves providing data-driven insights and strategies for business growth." },
+        { question: "Who can benefit from this service?", answer: "Business leaders, analysts, and investors." },
       ]}
     />
   );

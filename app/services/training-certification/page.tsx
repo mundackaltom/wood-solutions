@@ -1,85 +1,41 @@
 import ServicePageLayout from "../../../components/ServicePageLayout";
-import { FaCertificate, FaChalkboardTeacher, FaClipboardCheck, FaUniversity, FaGavel, FaTools, FaSearch } from "react-icons/fa";
 
 export default function TrainingCertificationPage() {
   return (
     <ServicePageLayout
       title="Training, Certification & Compliance"
-      positioningStatement="Building Capability, Compliance and Technical Confidence"
-      description="We offer specialized training, certification, and compliance services to help organizations meet industry standards and build technical expertise. Our programs are designed to empower your team and ensure regulatory compliance."
+      positioningStatement="Empowering professionals with industry-leading knowledge"
+      description="Our training and certification programs are designed to equip professionals with the skills and knowledge needed to excel in the wood industry."
       offerings={[
-        {
-          icon: <FaCertificate size={32} />, 
-          title: "Certification Consultancy",
-          description: "Guidance on FSC, PEFC, and PRAMAN certifications."
-        },
-        {
-          icon: <FaGavel size={32} />, 
-          title: "Compliance Support",
-          description: "EUDR compliance and due diligence advisory."
-        },
-        {
-          icon: <FaChalkboardTeacher size={32} />, 
-          title: "Technical Training",
-          description: "Seminars, workshops, and training modules for your team."
-        },
-        {
-          icon: <FaUniversity size={32} />, 
-          title: "Expert Sessions",
-          description: "Panel discussions and expert-led sessions on industry topics."
-        },
-        {
-          icon: <FaTools size={32} />, 
-          title: "Preservation Advisory",
-          description: "Consultancy on preservation plants and seasoning kilns."
-        },
+        { icon: <span>🎓</span>, title: "Professional Training", description: "Comprehensive courses for industry professionals." },
+        { icon: <span>📜</span>, title: "Certification Programs", description: "Recognized certifications for career advancement." },
+        { icon: <span>✅</span>, title: "Compliance Support", description: "Guidance on meeting industry standards." },
       ]}
       targetAudiences={[
-        "Manufacturers",
-        "Builders",
-        "Developers",
-        "Architects",
-        "Institutions",
+        "Industry Professionals",
+        "Compliance Officers",
+        "Training Coordinators",
+        "Educational Institutions",
       ]}
       processSteps={[
-        { step: "1. Needs Analysis", description: "Identifying your training and certification requirements.", icon: <FaSearch size={24} /> },
-        { step: "2. Program Design", description: "Developing tailored training and certification programs.", icon: <FaChalkboardTeacher size={24} /> },
-        { step: "3. Implementation", description: "Delivering training and guiding through certification processes.", icon: <FaClipboardCheck size={24} /> },
-        { step: "4. Ongoing Support", description: "Providing continuous support for compliance and updates.", icon: <FaTools size={24} /> },
+        { step: "Identify Training Needs", description: "Assess skill gaps and requirements." },
+        { step: "Develop Curriculum", description: "Create tailored training programs." },
+        { step: "Deliver Training", description: "Provide engaging and effective sessions." },
+        { step: "Evaluate Outcomes", description: "Measure success and provide feedback." },
       ]}
       outcomes={[
-        "Enhanced team expertise and skills",
-        "Achieved industry certifications",
-        "Improved compliance with regulations",
-        "Increased operational efficiency",
-        "Strengthened market reputation",
+        "Enhanced professional skills",
+        "Recognized certifications",
+        "Improved compliance capabilities",
       ]}
       caseStudy={{
-        title: "Achieving FSC Certification for a Leading Manufacturer",
-        description: "We guided a leading manufacturer through the FSC certification process, providing training and compliance support. The company successfully achieved certification, enhancing its market credibility and access to new markets.",
-        link: "/case-studies/fsc-certification-success",
+        title: "Case Study: Certification Success",
+        description: "Discover how our certification program helped professionals achieve industry recognition.",
+        link: "/case-studies/certification-success",
       }}
       faqs={[
-        {
-          question: "What certifications do you support?",
-          answer: "We support FSC, PEFC, PRAMAN, and other industry certifications."
-        },
-        {
-          question: "Do you offer on-site training?",
-          answer: "Yes, we provide both on-site and virtual training options."
-        },
-        {
-          question: "Can you help with compliance audits?",
-          answer: "Absolutely. We assist with compliance audits and provide actionable recommendations."
-        },
-        {
-          question: "What industries do you serve?",
-          answer: "We serve a wide range of industries, including manufacturing, construction, and architecture."
-        },
-        {
-          question: "How long do training programs last?",
-          answer: "The duration depends on the program, ranging from one-day workshops to multi-week courses."
-        },
+        { question: "What training programs do you offer?", answer: "We offer a range of professional training and certification programs." },
+        { question: "Who can benefit from these programs?", answer: "Industry professionals and educational institutions." },
       ]}
     />
   );

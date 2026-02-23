@@ -1,5 +1,6 @@
 import React, { JSX } from "react";
 import Link from "next/link";
+import ServiceHero from "./ServiceHero";
 
 type ServicePageLayoutProps = {
   title: string;
@@ -31,17 +32,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
   return (
     <div className="pt-24 max-w-7xl mx-auto px-6">
       {/* Service Hero Section */}
-      <section className="text-center py-12 bg-gray-50">
-        <h1 className="text-4xl font-bold mb-4">{title}</h1>
-        <p className="text-lg text-gray-600 mb-6">{positioningStatement}</p>
-        <p className="text-neutral-700 mb-6">{description}</p>
-        <Link
-          href="/contact"
-          className="bg-green-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-300"
-        >
-          Request Consultation
-        </Link>
-      </section>
+      <ServiceHero title={title} subtitle={positioningStatement} />
 
       {/* Service Overview Section */}
       <section className="py-12">
