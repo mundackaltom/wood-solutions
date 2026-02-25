@@ -8,17 +8,21 @@ export default function CapabilityStrip() {
     "MARKET STRATEGY",
   ];
 
-  // Duplicate items for seamless loop
-  const loopItems = [...items, ...items];
-
   return (
-    <div className="cap-strip">
-      <div className="cap-track">
-        {loopItems.map((item, i) => (
-          <span key={i} className="cap-item">
-            {item}
-          </span>
-        ))}
+    <div className="w-full overflow-hidden bg-green-800 text-white">
+      <div className="ticker">
+        <div className="ticker-track">
+          {/* Repeat MANY times to guarantee coverage */}
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="ticker-group">
+              {items.map((item, idx) => (
+                <span key={idx} className="ticker-item">
+                  {item}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

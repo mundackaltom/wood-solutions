@@ -43,38 +43,21 @@ function CompanyStory() {
               Our Mission
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Wood Solutions operates as an independent, expert-led advisory platform serving the wood, construction, and materials ecosystem. Our work is guided by technical integrity, ethical practice, and a deep understanding of material performance, regulatory frameworks, and market realities.
+              Our mission is to help you integrate Sustainable, Innovative and Futuristic Wood Solutions into every aspect of your wood-related operations — enabling informed decisions, stronger performance and long-term value creation across wood products and timber projects.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Whether you require technical evaluation, sourcing support, construction advisory, training, or strategic market insight, Wood Solutions offers structured, reliable, and outcome-oriented engagement.
+              We combine deep technical expertise with practical industry insight to deliver solutions that are scientifically sound, commercially viable, and tailored to your needs. By aligning global best practices with local realities, we help organizations adopt advanced wood technologies with confidence, efficiency, and long-term sustainability.
             </p>
           </div>
           
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Founded on Principles</h3>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Technical Integrity</h4>
-                  <p className="text-gray-600">Science-based evaluation and evidence-driven recommendations</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Ethical Practice</h4>
-                  <p className="text-gray-600">Transparent processes and honest, objective advice</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Client Focus</h4>
-                  <p className="text-gray-600">Solutions aligned with your specific objectives and constraints</p>
-                </div>
-              </div>
-            </div>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Our Vision</h3>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              To be the leading independent advisory platform that bridges the gap between cutting-edge wood science and real-world application, empowering organizations across the global wood value chain to achieve sustainable growth and operational excellence.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              We envision a future where every wood-related decision is informed by scientific rigor, environmental responsibility, and commercial wisdom — creating lasting value for businesses, communities, and the planet.
+            </p>
           </div>
         </div>
       </div>
