@@ -1,9 +1,17 @@
+import { Fondamento } from "next/font/google";
+
+const fondamento = Fondamento({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export default function Footer() {
   return (
     <footer className="bg-neutral-900 text-white mt-24">
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-lg font-semibold mb-3">Wood Solutions</h3>
+          <h3 className={`${fondamento.className} text-lg mb-3`}>Wood Solutions</h3>
           <p className="text-sm text-neutral-300">
             Independent Expertise Across the Wood Value Chain
           </p>

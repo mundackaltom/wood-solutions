@@ -12,6 +12,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 import Navbar from "../components/Navbar";
+import TopTicker from "../components/TopTicker";
 import Footer from "../components/Footer";
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-white text-neutral-800 font-sans">
         <Navbar />
+        <TopTicker />
         <main>{children}</main>
         <Footer />
       </body>

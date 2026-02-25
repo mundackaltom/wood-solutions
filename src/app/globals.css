@@ -79,3 +79,7 @@ body {
 .border-primary {
   border-color: #065f46;
 }
+
+.font-amaranth {
+  font-family: var(--font-amaranth), sans-serif;
+}

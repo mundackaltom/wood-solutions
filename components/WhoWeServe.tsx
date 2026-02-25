@@ -2,30 +2,30 @@
 
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-const industries = [
+const clientTypes = [
 	{
 		title: "Manufacturers",
-		description: "Quality assurance and technical optimization for wood products.",
+		description: "Quality improvement, process optimisation, testing, certification readiness and export compliance for wood products.",
 	},
 	{
-		title: "Importers",
-		description: "Compliance verification and supply chain guidance for global trade.",
-	},
-	{
-		title: "Builders",
-		description: "Engineered timber and wood systems for construction projects.",
+		title: "Importers & Traders",
+		description: "Supplier verification, inspection, documentation support and compliance guidance for reliable global sourcing.",
 	},
 	{
 		title: "Developers",
-		description: "Sustainable wood solutions for property development.",
+		description: "Technical advisory for sustainable timber projects including material selection, performance and lifecycle guidance.",
 	},
 	{
-		title: "Architects",
-		description: "Design and specification of wood materials and structures.",
+		title: "Builders & Contractors",
+		description: "Execution support for wood construction systems, installation quality and durability practices.",
 	},
 	{
-		title: "Institutions",
-		description: "Advancing wood science and technology in research and education.",
+		title: "Architects & Designers",
+		description: "Specification guidance and innovative engineered wood solutions for reliable performance and design integrity.",
+	},
+	{
+		title: "Institutions & Industry Bodies",
+		description: "Training, research collaboration and technical knowledge support to strengthen industry capability.",
 	},
 ];
 
@@ -42,33 +42,28 @@ export default function WhoWeServe() {
 					<h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
 						Who We Serve
 					</h2>
-					<p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-						Trusted by industry leaders across the wood value chain
+					<p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
+						Independent technical expertise across the entire wood value chain — from material science to construction and market strategy
 					</p>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-					<div className="space-y-8">
-						{industries.slice(0, 3).map((industry, idx) => (
-							<div key={idx} className="border-l-4 border-green-700 pl-6">
-								<h3 className="text-2xl font-semibold text-gray-900 mb-2">
-									{industry.title}
-								</h3>
-								<p className="text-gray-600">{industry.description}</p>
-							</div>
-						))}
-					</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+					{clientTypes.map((client, idx) => (
+						<div key={idx} className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 h-full">
+							<h3 className="text-xl font-bold text-gray-900 mb-3">
+								{client.title}
+							</h3>
+							<p className="text-gray-600 leading-relaxed">
+								{client.description}
+							</p>
+						</div>
+					))}
+				</div>
 
-					<div className="space-y-8">
-						{industries.slice(3).map((industry, idx) => (
-							<div key={idx} className="border-l-4 border-green-700 pl-6">
-								<h3 className="text-2xl font-semibold text-gray-900 mb-2">
-									{industry.title}
-								</h3>
-								<p className="text-gray-600">{industry.description}</p>
-							</div>
-						))}
-					</div>
+				<div className="text-center">
+					<p className="text-sm font-semibold text-green-700">
+						Wood Solutions: "Your Wood Technology Partner" across material, project, compliance and market decisions.
+					</p>
 				</div>
 			</div>
 		</section>

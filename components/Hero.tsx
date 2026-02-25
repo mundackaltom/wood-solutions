@@ -1,10 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import { Fondamento } from "next/font/google";
+
+const fondamento = Fondamento({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <section className="relative min-h-[91vh] flex items-center justify-center text-center overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/hero.jpg"
@@ -25,44 +32,17 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+        <h1 className={`${fondamento.className} text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight`}>
           WOOD SOLUTIONS
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-10">
-          Independent Technical, Commercial and Strategic Expertise Across the Wood
-          Value Chain
+        <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-10 text-center leading-relaxed">
+          Integrating Sustainable, Innovative and Futuristic Wood Solutions<br />
+          across the wood value chain
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a
-            href="/contact"
-            className="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-3 rounded-lg transition"
-          >
-            Request Consultation
-          </a>
-
-          <a
-            href="/services"
-            className="border border-white text-white hover:bg-white hover:text-black font-semibold px-8 py-3 rounded-lg transition"
-          >
-            Explore Services
-          </a>
-        </div>
-
-        {/* Trust Indicators */}
-        <p className="text-sm text-gray-300 mb-4">
-          Trusted by industry leaders worldwide
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-200">
-          <span>• Independent Advisory</span>
-          <span>• Technical Excellence</span>
-          <span>• Global Perspective</span>
-          <span>• Science-Based Solutions</span>
-        </div>
+        {/* Removed CTA Section */}
       </div>
 
       {/* Scroll Indicator */}

@@ -4,6 +4,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { Fondamento } from "next/font/google";
+import { Amaranth } from "next/font/google";
+
+const fondamento = Fondamento({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const amaranth = Amaranth({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,18 +65,28 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo and Brand Section */}
-        <Link href="/" className="flex items-center space-x-3">
-          <Image
-            src="/images/LogoFinalBG.png"
-            alt="Wood Solutions Logo"
-            width={40}
-            height={40}
-            className="h-9 w-auto sm:h-10"
-            priority
-          />
-          <span className="text-green-900 font-bold text-lg sm:text-xl">
-            Wood Solutions
-          </span>
+        <Link href="/" className="flex items-center gap-3 h-full">
+          {/* Logo Container */}
+          <div className="flex items-center h-full overflow-hidden">
+            <Image
+              src="/images/LogoFinalBG.png"
+              alt="Wood Solutions Logo"
+              width={80} // Increased width
+              height={80} // Increased height
+              className="max-h-[56px] w-auto object-contain" // Further increased max height for better visibility
+              priority
+            />
+          </div>
+
+          {/* Brand Text */}
+          <div className="flex flex-col leading-tight">
+            <span className="font-semibold text-lg text-green-800">
+              Wood Solutions
+            </span>
+            <span className="font-amaranth text-xs text-gray-600">
+              Your Wood Technology Partner
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden md:flex gap-8 font-medium">

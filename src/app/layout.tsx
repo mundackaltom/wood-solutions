@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Fondamento } from "next/font/google";
+import { Amaranth } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +12,19 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const fondamento = Fondamento({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const amaranth = Amaranth({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-amaranth",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} ${amaranth.variable} antialiased`}>
         {children}
       </body>
     </html>
