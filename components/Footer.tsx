@@ -30,8 +30,8 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
-          <p>Email: info@woodsolutions.com</p>
-          <p>Phone: +91 XXXXX XXXXX</p>
+          <p>Email: jimmyswoodsolutions@gmail.com</p>
+          <p>Phone: +91 9400356060</p>
         </div>
       </div>
 

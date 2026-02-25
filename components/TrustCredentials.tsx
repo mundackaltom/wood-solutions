@@ -23,9 +23,9 @@ const credentials = [
 
 export default function TrustCredentials() {
 	return (
-		<section className="py-16 md:py-24 bg-white">
+		<section className="py-8 md:py-12 bg-white">
 			<div className="max-w-7xl mx-auto px-4 md:px-8">
-				<div className="text-center mb-12 md:mb-16">
+				<div className="text-center mb-6 md:mb-10">
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
 						Trust & Credentials
 					</h2>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+import ExpertiseHighlight from "../../components/ExpertiseHighlight";
 
 const technicalDomains = [
   {
@@ -248,6 +249,7 @@ export default function ExpertisePage() {
   return (
     <div className="pt-20">
       <ExpertiseHero />
+      <ExpertiseHighlight />
       <TechnicalDomains />
       <IndustriesServed />
       <Methodologies />
