@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import WhoWeServe from "../../components/WhoWeServe";
 import TrustCredentials from "../../components/TrustCredentials";
+import FounderSection from "../../components/FounderSection";
 
 function AboutHero() {
   const { ref, isVisible } = useIntersectionObserver();
@@ -139,6 +140,7 @@ export default function AboutPage() {
   return (
     <div>
       <AboutHero />
+      <FounderSection />
       <CompanyStory />
       <CoreValues />
       <WhoWeServe />

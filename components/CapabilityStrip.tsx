@@ -1,7 +1,5 @@
-'use client';
-
 export default function CapabilityStrip() {
-  const expertiseAreas = [
+  const items = [
     "TECHNICAL",
     "SOURCING",
     "CONSTRUCTION",
@@ -10,20 +8,15 @@ export default function CapabilityStrip() {
     "MARKET STRATEGY",
   ];
 
+  // Duplicate items for seamless loop
+  const loopItems = [...items, ...items];
+
   return (
-    <div className="ticker">
-      <div className="ticker-track">
-        {/* ORIGINAL ITEMS */}
-        {expertiseAreas.map((area, index) => (
-          <span key={`original-${index}`}>
-            {area}
-          </span>
-        ))}
-        
-        {/* DUPLICATE — REQUIRED FOR SEAMLESS LOOP */}
-        {expertiseAreas.map((area, index) => (
-          <span key={`duplicate-${index}`}>
-            {area}
+    <div className="cap-strip">
+      <div className="cap-track">
+        {loopItems.map((item, i) => (
+          <span key={i} className="cap-item">
+            {item}
           </span>
         ))}
       </div>

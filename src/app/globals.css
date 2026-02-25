@@ -130,6 +130,42 @@ body {
   }
 }
 
+/* ===== Capability Strip — Seamless Infinite ===== */
+
+.cap-strip {
+  position: sticky;
+  top: 64px; /* adjust if navbar height differs */
+  z-index: 40;
+  overflow: hidden;
+  background: #166534; /* your dark green */
+  white-space: nowrap;
+}
+
+.cap-track {
+  display: inline-flex;
+  align-items: center;
+  animation: capScroll 20s linear infinite;
+}
+
+.cap-item {
+  flex-shrink: 0;
+  padding: 0 2.5rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+/* 🔥 TRUE seamless animation */
+@keyframes capScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* Enhanced focus styles for accessibility */
 .focus-ring:focus {
   outline: 2px solid #065f46;
