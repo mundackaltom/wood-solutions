@@ -11,7 +11,7 @@ function AboutHero() {
   return (
     <section 
       ref={ref}
-      className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-20 md:py-28 fade-in-up ${isVisible ? 'is-visible' : ''}`}
+      className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-12 md:py-14 lg:py-16 fade-in-up ${isVisible ? 'is-visible' : ''}`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="max-w-4xl">
@@ -33,7 +33,7 @@ function CompanyStory() {
   return (
     <section 
       ref={ref}
-      className={`py-20 md:py-28 bg-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
+      className={`py-10 md:py-12 bg-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -82,28 +82,7 @@ function CompanyStory() {
 }
 
 function IndependenceStatement() {
-  const { ref, isVisible } = useIntersectionObserver();
-
-  return (
-    <section 
-      ref={ref}
-      className={`py-20 md:py-28 bg-green-50 fade-in-up ${isVisible ? 'is-visible' : ''}`}
-    >
-      <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
-        <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 tracking-tight">
-            Independence Statement
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-6">
-            <strong>We do not trade in wood products.</strong> Our independence allows us to provide objective advice, unbiased evaluations, and client-aligned solutions without any conflicts of interest.
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            This fundamental principle ensures that every recommendation, assessment, and strategic decision is made purely in your best interests, not ours.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+  return null;
 }
 
 function CoreValues() {
@@ -131,10 +110,10 @@ function CoreValues() {
   return (
     <section 
       ref={ref}
-      className={`py-20 md:py-28 bg-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
+      className={`py-10 md:py-12 bg-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="text-center mb-16">
+        <div className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
             Our Values
           </h2>
@@ -156,42 +135,14 @@ function CoreValues() {
   );
 }
 
-function AboutCTA() {
-  const { ref, isVisible } = useIntersectionObserver();
-
-  return (
-    <section 
-      ref={ref}
-      className={`py-20 md:py-28 bg-green-800 text-white fade-in-up ${isVisible ? 'is-visible' : ''}`}
-    >
-      <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-          Let's Work Together
-        </h2>
-        <p className="text-xl text-green-100 mb-8 leading-relaxed">
-          Experience the difference that independent expertise makes. Connect with us to discuss how we can support your objectives.
-        </p>
-        <Link
-          href="/contact"
-          className="inline-block bg-white text-green-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition-colors duration-200 focus-ring"
-        >
-          Start a Conversation
-        </Link>
-      </div>
-    </section>
-  );
-}
-
 export default function AboutPage() {
   return (
-    <div className="pt-20">
+    <div>
       <AboutHero />
       <CompanyStory />
-      <IndependenceStatement />
       <CoreValues />
       <WhoWeServe />
       <TrustCredentials />
-      <AboutCTA />
     </div>
   );
 }

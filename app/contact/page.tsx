@@ -18,13 +18,13 @@ function ContactHero() {
   return (
     <section 
       ref={ref}
-      className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-20 md:py-28 fade-in-up ${isVisible ? 'is-visible' : ''}`}
+      className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-12 md:py-14 lg:py-16 fade-in-up ${isVisible ? 'is-visible' : ''}`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-left">
           Let's Start a Conversation
         </h1>
-        <p className="text-xl md:text-2xl text-green-100 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-green-100 max-w-4xl leading-relaxed text-left">
           Ready to explore how independent expertise can drive your business forward? We're here to listen, understand, and provide solutions.
         </p>
       </div>
@@ -64,7 +64,7 @@ function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Form */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 tracking-tight text-left">
               Request a Consultation
             </h2>
             
@@ -232,7 +232,7 @@ function ContactCTA() {
 
 export default function ContactPage() {
   return (
-    <div className="pt-20">
+    <div>
       <ContactHero />
       <ContactForm />
       <ContactCTA />

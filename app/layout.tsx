@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className="bg-white text-neutral-800 font-sans">
         <Navbar />
         <TopTicker />
-        <main>{children}</main>
+        <main className="flex-1 pt-11">{children}</main>
         <Footer />
       </body>
     </html>

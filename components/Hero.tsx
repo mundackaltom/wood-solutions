@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className={`${fondamento.className} text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight`}>
+        <h1 className={`${fondamento.className} text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight text-left`}>
           WOOD SOLUTIONS
         </h1>
 

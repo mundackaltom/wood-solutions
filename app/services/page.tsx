@@ -72,7 +72,7 @@ function ServiceHero() {
 	return (
 		<section
 			ref={ref}
-			className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-20 md:py-28 fade-in-up ${
+			className={`bg-gradient-to-b from-green-800 to-green-700 text-white py-12 md:py-14 lg:py-16 fade-in-up ${
 				isVisible ? "is-visible" : ""
 			}`}
 		>
@@ -238,7 +238,7 @@ function ServicesCTA() {
 
 export default function ServicesPage() {
 	return (
-		<div className="pt-20">
+		<div>
 			<ServiceHero />
 			<ServicesPhilosophy />
 			<ServicesList />

@@ -1,56 +1,29 @@
 'use client';
 
 export default function TopTicker() {
-  const expertiseAreas = [
+  const items = [
     "TECHNICAL",
-    "SOURCING", 
+    "SOURCING",
     "CONSTRUCTION",
     "COMPLIANCE",
     "TRAINING",
-    "MARKET STRATEGY"
+    "MARKET STRATEGY",
   ];
 
-  // Duplicate content for seamless looping
-  const duplicatedContent = [...expertiseAreas, ...expertiseAreas];
+  const ticker = [...items, ...items]; // duplicate for seamless loop
 
   return (
-    <div className="w-full bg-green-800 text-white py-2 overflow-hidden mt-20">
-      <div className="flex animate-marquee">
-        {duplicatedContent.map((area, index) => (
+    <div className="sticky top-[88px] z-40 w-full overflow-hidden bg-green-900">
+      <div className="whitespace-nowrap animate-marquee flex">
+        {ticker.map((text, i) => (
           <span
-            key={index}
-            className="flex-shrink-0 uppercase tracking-wide font-medium text-sm px-8 whitespace-nowrap"
+            key={i}
+            className="inline-block px-8 py-2 text-white text-sm font-semibold"
           >
-            {area}
+            {text}
           </span>
         ))}
       </div>
-      
-      <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        
-        .animate-marquee {
-          animation: marquee 30s linear infinite;
-        }
-        
-        @media (prefers-reduced-motion: reduce) {
-          .animate-marquee {
-            animation: none;
-            justify-content: center;
-          }
-          .animate-marquee span {
-            display: inline-block;
-            margin: 0 1rem;
-          }
-        }
-      `}</style>
     </div>
   );
 }
