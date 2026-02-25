@@ -75,6 +75,61 @@ body {
   animation: marquee 20s linear infinite;
 }
 
+@media (max-width: 768px) {
+  .animate-marquee {
+    animation-duration: 8s !important;
+  }
+}
+
+/* True seamless ticker animation */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: #166534; /* green-800 */
+  white-space: nowrap;
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 3rem;
+  padding: 1rem 0;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+.ticker-track span {
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .ticker-track span {
+    font-size: 1rem;
+  }
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .ticker-track {
+    animation-duration: 8s !important;
+    gap: 1.5rem;
+  }
+  
+  .ticker-track span {
+    padding: 0 0.5rem;
+  }
+}
+
 /* Enhanced focus styles for accessibility */
 .focus-ring:focus {
   outline: 2px solid #065f46;

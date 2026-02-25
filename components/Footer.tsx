@@ -145,10 +145,29 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="text-center py-4 border-t border-neutral-700 text-sm text-neutral-400">
-          © 2026 Wood Solutions. All rights reserved.
+        {/* LEGAL BAR — RIGHT BELOW FOOTER COLUMNS */}
+        <div className="max-w-7xl mx-auto px-6 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+
+          {/* LEFT — Legal Links */}
+          <div className="flex items-center gap-6">
+            <a href="/disclaimer" className="hover:text-white transition">
+              Disclaimer
+            </a>
+
+            <a href="/privacy-policy" className="hover:text-white transition">
+              Privacy Policy
+            </a>
+          </div>
+
+          {/* RIGHT — Copyright */}
+          <p className="text-center md:text-right">
+            © 2026 Wood Solutions. All rights reserved.
+          </p>
+
         </div>
+
+        {/* THIN DIVIDER LINE BELOW */}
+        <div className="border-t border-gray-800 mt-6"></div>
       </footer>
     </>
   );

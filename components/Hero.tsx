@@ -25,19 +25,21 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl px-6 text-white">
+      <div className="relative z-10 max-w-5xl mx-auto text-center lg:text-left lg:mx-0 px-6 text-white">
         {/* Badge */}
-        <div className="inline-block mb-6 px-4 py-2 bg-green-700/80 rounded-full text-sm font-semibold tracking-wide">
-          INDEPENDENT WOOD ADVISORY
+        <div className="mb-6 flex justify-center lg:justify-start">
+          <div className="inline-block px-4 py-2 bg-green-700/80 rounded-full text-sm font-semibold tracking-wide">
+            INDEPENDENT WOOD ADVISORY
+          </div>
         </div>
 
         {/* Heading */}
-        <h1 className={`${fondamento.className} text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight text-left`}>
+        <h1 className={`${fondamento.className} text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight`}>
           WOOD SOLUTIONS
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-10 text-center leading-relaxed">
+        <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto lg:mx-0 mb-10 leading-relaxed">
           Integrating Sustainable, Innovative and Futuristic Wood Solutions<br />
           across the wood value chain
         </p>
@@ -46,7 +48,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 text-white text-2xl animate-bounce">↓</div>
+      <div className="absolute bottom-8 text-white text-2xl animate-bounce flex justify-center w-full">↓</div>
     </section>
   );
 }
