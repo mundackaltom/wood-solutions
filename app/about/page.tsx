@@ -42,20 +42,20 @@ function CompanyStory() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
               Our Mission
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Our mission is to help you integrate Sustainable, Innovative and Futuristic Wood Solutions into every aspect of your wood-related operations — enabling informed decisions, stronger performance and long-term value creation across wood products and timber projects.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               We combine deep technical expertise with practical industry insight to deliver solutions that are scientifically sound, commercially viable, and tailored to your needs. By aligning global best practices with local realities, we help organizations adopt advanced wood technologies with confidence, efficiency, and long-term sustainability.
             </p>
           </div>
           
           <div className="bg-gray-50 p-8 rounded-lg">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Our Vision</h3>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               To be the leading independent advisory platform that bridges the gap between cutting-edge wood science and real-world application, empowering organizations across the global wood value chain to achieve sustainable growth and operational excellence.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               We envision a future where every wood-related decision is informed by scientific rigor, environmental responsibility, and commercial wisdom — creating lasting value for businesses, communities, and the planet.
             </p>
           </div>
@@ -101,7 +101,7 @@ function CoreValues() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
             Our Values
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             The principles that guide every decision and shape our approach to serving clients across the wood industry.
           </p>
         </div>
@@ -110,7 +110,7 @@ function CoreValues() {
           {values.map((value, index) => (
             <div key={index} className="p-8 border border-gray-200 rounded-lg hover:border-green-200 transition-colors duration-200">
               <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{value.description}</p>
+              <p className="text-gray-700 leading-relaxed">{value.description}</p>
             </div>
           ))}
         </div>

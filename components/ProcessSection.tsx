@@ -38,7 +38,7 @@ export default function ProcessSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             How We Work
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Our proven four-step process ensures comprehensive and effective solutions.
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function ProcessSection() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {step.title}
               </h3>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {step.description}
               </p>
               {index < steps.length - 1 && (

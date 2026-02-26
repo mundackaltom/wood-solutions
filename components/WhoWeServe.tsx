@@ -42,7 +42,7 @@ export default function WhoWeServe() {
 					<h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
 						Who We Serve
 					</h2>
-					<p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
+					<p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto">
 						Independent technical expertise across the entire wood value chain — from material science to construction and market strategy
 					</p>
 				</div>
@@ -53,7 +53,7 @@ export default function WhoWeServe() {
 							<h3 className="text-xl font-bold text-gray-900 mb-3">
 								{client.title}
 							</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<p className="text-gray-700 leading-relaxed">
 								{client.description}
 							</p>
 						</div>

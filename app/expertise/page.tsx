@@ -128,7 +128,7 @@ function TechnicalDomains() {
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
 						Areas of Technical Expertise
 					</h2>
-					<p className="text-lg text-gray-600 max-w-3xl mx-auto">
+					<p className="text-lg text-gray-700 max-w-3xl mx-auto">
 						Comprehensive knowledge spanning the full spectrum of wood technology,
 						from fundamental material science to advanced engineering applications.
 					</p>
@@ -171,7 +171,7 @@ function IndustriesServed() {
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
 						Industries We Serve
 					</h2>
-					<p className="text-lg text-gray-600 max-w-3xl mx-auto">
+					<p className="text-lg text-gray-700 max-w-3xl mx-auto">
 						Cross-sector expertise enabling us to understand unique challenges and
 						deliver targeted solutions across diverse industry applications.
 					</p>
@@ -186,7 +186,7 @@ function IndustriesServed() {
 							<h3 className="text-lg font-bold text-gray-900 mb-3">
 								{industry.title}
 							</h3>
-							<p className="text-gray-600 text-sm">
+							<p className="text-gray-700 text-sm">
 								{industry.description}
 							</p>
 						</div>
@@ -212,7 +212,7 @@ function Methodologies() {
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
 						Our Approach
 					</h2>
-					<p className="text-lg text-gray-600 max-w-3xl mx-auto">
+					<p className="text-lg text-gray-700 max-w-3xl mx-auto">
 						Systematic methodologies ensuring consistent, reliable, and actionable
 						results across all engagements.
 					</p>
@@ -227,7 +227,7 @@ function Methodologies() {
 							<h3 className="text-xl font-bold text-gray-900 mb-4">
 								{methodology.title}
 							</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<p className="text-gray-700 leading-relaxed">
 								{methodology.description}
 							</p>
 						</div>
@@ -261,7 +261,7 @@ function ProfessionalApproach() {
 							<h3 className="text-lg font-semibold text-gray-900 mb-2">
 								Evidence-Based
 							</h3>
-							<p className="text-gray-600 text-sm">
+							<p className="text-gray-700 text-sm">
 								All recommendations grounded in scientific data and proven
 								methodologies
 							</p>
@@ -273,7 +273,7 @@ function ProfessionalApproach() {
 							<h3 className="text-lg font-semibold text-gray-900 mb-2">
 								Objective Analysis
 							</h3>
-							<p className="text-gray-600 text-sm">
+							<p className="text-gray-700 text-sm">
 								Independent perspective free from commercial bias or conflicts of
 								interest
 							</p>
@@ -285,7 +285,7 @@ function ProfessionalApproach() {
 							<h3 className="text-lg font-semibold text-gray-900 mb-2">
 								Continuous Learning
 							</h3>
-							<p className="text-gray-600 text-sm">
+							<p className="text-gray-700 text-sm">
 								Staying current with emerging technologies and evolving industry
 								standards
 							</p>

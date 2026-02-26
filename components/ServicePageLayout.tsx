@@ -39,7 +39,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
         {/* Service Overview Section */}
         <section className="py-16">
           <h2 className="text-3xl font-bold mb-6">Service Overview</h2>
-          <p className="text-lg text-neutral-700 leading-relaxed max-w-4xl">
+          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
             {description}
           </p>
         </section>
@@ -57,7 +57,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                 <h3 className="text-xl font-semibold mb-3">
                   {offering.title}
                 </h3>
-                <p className="text-neutral-700 leading-relaxed">{offering.description}</p>
+                <p className="text-gray-700 leading-relaxed">{offering.description}</p>
               </div>
             ))}
           </div>
@@ -92,7 +92,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-2">{step.step}</h3>
-                  <p className="text-neutral-700 leading-relaxed">{step.description}</p>
+                  <p className="text-gray-700 leading-relaxed">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -109,7 +109,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                 className="flex items-center space-x-4 bg-gray-50 p-6 rounded-lg"
               >
                 <span className="text-green-900 text-xl">✔</span>
-                <p className="text-neutral-700 font-medium">{outcome}</p>
+                <p className="text-gray-700 font-medium">{outcome}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
             <h2 className="text-3xl font-bold mb-8">Case Study</h2>
             <div className="bg-green-50 p-8 rounded-lg">
               <h3 className="font-bold text-xl mb-4">{caseStudy.title}</h3>
-              <p className="text-neutral-700 leading-relaxed mb-6">{caseStudy.description}</p>
+              <p className="text-gray-700 leading-relaxed mb-6">{caseStudy.description}</p>
               <Link
                 href={caseStudy.link}
                 className="inline-block bg-green-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors"
@@ -140,7 +140,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
               {faqs.map((faq, index) => (
                 <div key={index} className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-lg mb-3">{faq.question}</h3>
-                  <p className="text-neutral-700 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>

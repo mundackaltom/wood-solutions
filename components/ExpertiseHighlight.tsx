@@ -25,7 +25,7 @@ export default function ExpertiseHighlight() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Our Expertise
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Deep technical knowledge across key domains in wood science and industry
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function ExpertiseHighlight() {
                 {item.title}
               </h3>
               {item.description && (
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                   {item.description}
                 </p>
               )}

@@ -40,7 +40,7 @@ export default function CaseStudyPreview() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             Proven Results
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Real-world impact across diverse projects and industries. See how our independent expertise drives measurable success.
           </p>
         </div>
@@ -58,13 +58,13 @@ export default function CaseStudyPreview() {
                 {study.title}
               </h3>
               
-              <p className="text-gray-600 mb-4 leading-relaxed">
+              <p className="text-gray-700 mb-4 leading-relaxed">
                 {study.description}
               </p>
               
               <div className="border-t border-gray-100 pt-4">
                 <div className="flex justify-between items-center text-sm">
-                  <span className="text-gray-500">{study.client}</span>
+                  <span className="text-gray-600">{study.client}</span>
                   <span className="font-semibold text-green-700">{study.impact}</span>
                 </div>
               </div>

@@ -41,7 +41,7 @@ const ValueProposition = () => {
             md:text-lg
             lg:text-xl
             leading-relaxed
-            text-gray-600
+            text-gray-700
             tracking-[0.01em]
             text-justify
           ">
@@ -62,7 +62,7 @@ const ValueProposition = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 text-justify">
                   {value.title}
                 </h3>
-                <p className="text-sm text-gray-600 text-justify">
+                <p className="text-sm text-gray-700 text-justify">
                   {value.description}
                 </p>
               </div>
@@ -91,7 +91,7 @@ const ValueProposition = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 text-justify">
                     {value.title}
                   </h3>
-                  <p className="text-sm text-gray-600 text-justify">
+                  <p className="text-sm text-gray-700 text-justify">
                     {value.description}
                   </p>
                 </div>

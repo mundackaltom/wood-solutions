@@ -168,23 +168,23 @@ function ContactForm() {
             <div className="space-y-8">
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Email</h4>
-                <p className="text-gray-600">contact@woodsolutions.com</p>
-                <p className="text-sm text-gray-500 mt-1">We typically respond within 24 hours</p>
+                <p className="text-gray-700">contact@woodsolutions.com</p>
+                <p className="text-sm text-gray-600 mt-1">We typically respond within 24 hours</p>
               </div>
 
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Global Coverage</h4>
-                <p className="text-gray-600 mb-2">
+                <p className="text-gray-700 mb-2">
                   While based internationally, we serve clients across North America, Europe, Asia-Pacific, and emerging markets.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-600">
                   Time zone flexibility for global project coordination
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Privacy & Confidentiality</h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700 text-sm">
                   All consultations are strictly confidential. We respect your privacy and protect sensitive business information with the highest standards of professional discretion.
                 </p>
               </div>
@@ -212,17 +212,17 @@ function ContactCTA() {
           <div>
             <div className="w-8 h-8 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-sm font-bold">1</div>
             <h3 className="font-semibold text-gray-900 mb-2">We Listen</h3>
-            <p className="text-sm text-gray-600">Initial consultation to understand your specific needs and objectives</p>
+            <p className="text-sm text-gray-700">Initial consultation to understand your specific needs and objectives</p>
           </div>
           <div>
             <div className="w-8 h-8 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-sm font-bold">2</div>
             <h3 className="font-semibold text-gray-900 mb-2">We Assess</h3>
-            <p className="text-sm text-gray-600">Detailed evaluation of technical requirements and commercial considerations</p>
+            <p className="text-sm text-gray-700">Detailed evaluation of technical requirements and commercial considerations</p>
           </div>
           <div>
             <div className="w-8 h-8 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-sm font-bold">3</div>
             <h3 className="font-semibold text-gray-900 mb-2">We Deliver</h3>
-            <p className="text-sm text-gray-600">Actionable recommendations and ongoing support for implementation</p>
+            <p className="text-sm text-gray-700">Actionable recommendations and ongoing support for implementation</p>
           </div>
         </div>
       </div>

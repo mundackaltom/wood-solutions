@@ -103,7 +103,7 @@ function ServicesPhilosophy() {
 				<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 tracking-tight">
 					Our Approach
 				</h2>
-				<p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
+				<p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
 					Every engagement begins with understanding your unique challenges and
 					objectives. Our independent status ensures unbiased recommendations
 					focused solely on your success.
@@ -116,7 +116,7 @@ function ServicesPhilosophy() {
 						<h3 className="text-lg font-semibold text-gray-900 mb-2">
 							Independent
 						</h3>
-						<p className="text-gray-600">
+						<p className="text-gray-700">
 							No trading conflicts, pure advisory focus
 						</p>
 					</div>
@@ -127,7 +127,7 @@ function ServicesPhilosophy() {
 						<h3 className="text-lg font-semibold text-gray-900 mb-2">
 							Scientific
 						</h3>
-						<p className="text-gray-600">Evidence-based technical evaluation</p>
+						<p className="text-gray-700">Evidence-based technical evaluation</p>
 					</div>
 					<div className="text-center">
 						<div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -136,7 +136,7 @@ function ServicesPhilosophy() {
 						<h3 className="text-lg font-semibold text-gray-900 mb-2">
 							Strategic
 						</h3>
-						<p className="text-gray-600">
+						<p className="text-gray-700">
 							Commercial insight and market intelligence
 						</p>
 					</div>
@@ -161,7 +161,7 @@ function ServicesList() {
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
 						Service Categories
 					</h2>
-					<p className="text-lg text-gray-600 max-w-3xl mx-auto">
+					<p className="text-lg text-gray-700 max-w-3xl mx-auto">
 						Comprehensive solutions tailored to your specific needs across the wood
 						industry value chain.
 					</p>
@@ -178,7 +178,7 @@ function ServicesList() {
 									<h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 tracking-tight">
 										{service.title}
 									</h3>
-									<p className="text-lg text-gray-600 leading-relaxed mb-8">
+									<p className="text-lg text-gray-700 leading-relaxed mb-8">
 										{service.description}
 									</p>
 									<div className="grid grid-cols-2 gap-4 mb-8">

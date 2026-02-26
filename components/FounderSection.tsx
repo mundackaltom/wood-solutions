@@ -29,11 +29,11 @@ export default function FounderSection() {
               Dr Jimmy Thomas
             </h2>
 
-            <p className="mt-2 text-lg text-neutral-600 text-justify">
+            <p className="mt-2 text-lg text-gray-700 text-justify">
               Consulting Wood Technologist, Founder & Director
             </p>
 
-            <p className="mt-4 text-neutral-700 leading-relaxed text-justify">
+            <p className="mt-4 text-gray-700 leading-relaxed text-justify">
               One of India's most respected and pioneering professionals in the
               field of Wood Science and Technology, with over 27 years of
               experience across the entire wood value chain.
@@ -49,7 +49,7 @@ export default function FounderSection() {
             <h4 className="font-semibold text-neutral-900">
               Education
             </h4>
-            <p className="text-neutral-600 mt-2 text-sm leading-relaxed">
+            <p className="text-gray-700 mt-2 text-sm leading-relaxed">
               M.Sc. Wood Science & Technology (First Rank), FRI Dehradun • PhD,
               University of Canterbury, New Zealand • Executive Programme,
               IIM Calcutta
@@ -60,7 +60,7 @@ export default function FounderSection() {
             <h4 className="font-semibold text-neutral-900">
               International Training
             </h4>
-            <p className="text-neutral-600 mt-2 text-sm leading-relaxed">
+            <p className="text-gray-700 mt-2 text-sm leading-relaxed">
               Forest Products Laboratory, Wisconsin (USA) • University of
               British Columbia, Vancouver (Canada)
             </p>
@@ -70,7 +70,7 @@ export default function FounderSection() {
             <h4 className="font-semibold text-neutral-900">
               Leadership Roles
             </h4>
-            <p className="text-neutral-600 mt-2 text-sm leading-relaxed">
+            <p className="text-gray-700 mt-2 text-sm leading-relaxed">
               Former Assistant Director – Technical Services, Canadian Wood •
               Former Wood Technologist & Lab Manager, Rubber Board of India
             </p>

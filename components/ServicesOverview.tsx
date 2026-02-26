@@ -40,7 +40,7 @@ export default function ServicesOverview() {
 				<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
 					Our Services
 				</h2>
-				<p className="text-lg text-gray-600 max-w-2xl mx-auto">
+				<p className="text-lg text-gray-700 max-w-2xl mx-auto">
 					Comprehensive and Strategic Expertise Across the Wood Value Chain
 				</p>
 			</div>
@@ -59,7 +59,7 @@ export default function ServicesOverview() {
 							<h3 className="text-lg font-semibold text-gray-900 mb-3">
 								{service.title}
 							</h3>
-							<p className="text-gray-600 text-sm leading-relaxed flex-grow">
+							<p className="text-gray-700 text-sm leading-relaxed flex-grow">
 								{service.description}
 							</p>
 							<Link
@@ -86,7 +86,7 @@ export default function ServicesOverview() {
 							<h3 className="text-lg font-semibold text-gray-900 mb-3">
 								{service.title}
 							</h3>
-							<p className="text-gray-600 text-sm leading-relaxed flex-grow">
+							<p className="text-gray-700 text-sm leading-relaxed flex-grow">
 								{service.description}
 							</p>
 							<Link

@@ -21,8 +21,8 @@ export default function Hero() {
         className="object-cover scale-105"
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
+      {/* Dark Overlay - Enhanced for better text visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80" />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl text-left px-6 text-white flex flex-col justify-end h-full absolute bottom-0 left-0">

@@ -83,7 +83,7 @@ export default function Navbar() {
             <span className="font-semibold text-lg text-green-800">
               Wood Solutions
             </span>
-            <span className="font-amaranth text-xs text-gray-600">
+            <span className="font-amaranth text-xs text-gray-700">
               Your Wood Technology Partner
             </span>
           </div>
