@@ -168,7 +168,7 @@ function ContactForm() {
             <div className="space-y-8">
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Email</h4>
-                <p className="text-gray-700">contact@woodsolutions.com</p>
+                <p className="text-gray-700">woodsolutionsindia@gmail.com</p>
                 <p className="text-sm text-gray-600 mt-1">We typically respond within 24 hours</p>
               </div>
 

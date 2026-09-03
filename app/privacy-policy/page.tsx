@@ -145,7 +145,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-2">Contact</h2>
           <p>Wood Solutions</p>
-          <p>Email: jimmywoodsolutions@gmail.com</p>
+          <p>Email: woodsolutionsindia@gmail.com</p>
           <p>Website: www.woodsolutions.org.in</p>
           <p className="mt-2 font-medium">
             Wood Solutions — Your Wood Technology Partner

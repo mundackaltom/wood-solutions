@@ -111,10 +111,10 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <p>
                 <a 
-                  href="mailto:jimmyswoodsolutions@gmail.com" 
+                  href="mailto:woodsolutionsindia@gmail.com"
                   className="text-neutral-300 hover:text-green-400 transition-colors duration-200"
                 >
-                  Email: jimmyswoodsolutions@gmail.com
+                  Email: woodsolutionsindia@gmail.com
                 </a>
               </p>
               <p>
